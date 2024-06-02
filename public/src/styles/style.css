@@ -1,20 +1,25 @@
-/* * {
-    border: solid black 1px;
-} */
-
 body {
     background-color: var(--color-secondary-grey);
 }
+
+a.nav-item {
+    transition: color 0.3 ease, transform 0.3 ease;
+    font-weight: 600;
+}
+
+a.nav-item:hover {
+    color: var(--color-primary-pink);
+    transform: scale(1.10);
+    font-weight: bolder;
+}
+
 
 .container {
     min-height: 100vh;
     display: flex;
     flex-flow: column;
     padding: 0 7%;
-    padding-bottom: 80px;
-    /* background: linear-gradient(var(--color-secondary-grey) 50%, var(--color-primary-pink) 50.1% ); */
-    /* background: var(--color) */
-    
+    padding-bottom: 80px;    
 }
 
 .container .box-container {
@@ -56,15 +61,25 @@ body {
     font-size: 3.75rem;
 }
 
-.container .box-container .box ul li {
+.container .box-container .box div p {
     list-style: none;
-    padding: 0.3125rem 0;
+    padding: 0.250rem 0;
     color: var(--color-secondary-black);
     font-size: 1rem;
+    text-align: center;
 }
 
 .container .box-container article.box:nth-child(2) {
     background-color: var(--color-secondary-pink-ligther);
+    transform: perspective(1000px) translateZ(0px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.container .box-container article.box:nth-child(2):hover {
+    transform: perspective(1000px) translateZ(80px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3), 0 15px 30px rgba(0, 0, 0, 0.25);
 }
 
 .container .box-container .btn {
@@ -85,7 +100,6 @@ body {
 
 .container .price-toggler-container {
     margin: 0.625rem auto;
-    /* background-color: var(--color-secondary-white); */
     padding: 1rem;
     border-radius: 0.5rem;
     box-shadow: 0 5px 10px rgba((0),0,0,.3);
@@ -126,6 +140,17 @@ body {
 
 .container .price-toggler-container .price-toggler.active::before {
     left: 7px;
+}
+
+.navbar-toggler {
+    font-size: 0.8rem;
+}
+
+footer .footer {
+    background-color: var(--color-secondary-black);
+    color: var(--color-secondary-white);
+    padding-bottom: 2rem;
+    padding: 1.5rem 4.5rem;
 }
 
 

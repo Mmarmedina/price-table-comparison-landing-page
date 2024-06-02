@@ -1,6 +1,6 @@
 :root {
     --color-primary-pink: hsl(340, 94%, 50%);
-    --color-secondary-pink-ligther:hsl(338, 93%, 84%);
+    --color-secondary-pink-ligther:hsla(338, 93%, 84%, 0.741);
     --color-secondary-grey: hsl(300, 5%, 96%);
     --color-secondary-white: hsl(0, 0%, 100%);
     --color-secondary-black: hsl(0, 0%, 20%);
