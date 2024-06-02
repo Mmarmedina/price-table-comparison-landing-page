@@ -3,13 +3,12 @@ body {
 }
 
 a.nav-item {
-    transition: color 0.3 ease, transform 0.3 ease;
+    transition: color 0.3 ease;
     font-weight: 600;
 }
 
 a.nav-item:hover {
     color: var(--color-primary-pink);
-    transform: scale(1.10);
     font-weight: bolder;
 }
 
@@ -27,6 +26,7 @@ a.nav-item:hover {
     flex-wrap: wrap;
     gap: 1rem;
     padding: 0.625rem 0;
+    margin: 0 0.7rem;
 }
 
 .container .box-container .box {
@@ -104,7 +104,7 @@ a.nav-item:hover {
     border-radius: 0.5rem;
     box-shadow: 0 5px 10px rgba((0),0,0,.3);
     display: flex;
-    align-items: center;
+    
 }
 
 .container .price-toggler-container span {
