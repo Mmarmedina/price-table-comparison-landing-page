@@ -36,6 +36,7 @@ a.nav-item:hover {
     text-align: center;
     flex: 1 1 18.75rem;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    cursor: pointer;
 }
 
 .container .box-container .box img {
@@ -71,16 +72,7 @@ a.nav-item:hover {
 
 .container .box-container article.box:nth-child(2) {
     background-color: var(--color-secondary-pink-ligther);
-    /* transform: perspective(1000px) translateZ(0px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
-    transition: transform 0.3s ease, box-shadow 0.3s ease; */
-    cursor: pointer;
 }
-
-/* .container .box-container article.box:nth-child(2):hover {
-    transform: perspective(1000px) translateZ(80px);
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3), 0 15px 30px rgba(0, 0, 0, 0.25);
-} */
 
 .container .box-container article.box:hover {
     transform: perspective(1000px) translateZ(50px);
