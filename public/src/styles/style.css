@@ -70,9 +70,14 @@ a.nav-item:hover {
     text-align: center;
 }
 
-.container .box-container article.box:nth-child(2) {
+.container .box-container article.active.bg-box {
     background-color: var(--color-secondary-pink-ligther);
 }
+
+
+/* .container .box-container article.box:nth-child(2) {
+    background-color: var(--color-secondary-pink-ligther);
+} */
 
 .container .box-container article.box:hover {
     transform: perspective(1000px) translateZ(50px);
