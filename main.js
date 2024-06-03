@@ -23,26 +23,31 @@ priceToggle.onclick = () =>{
     }
 }
 
-const handleBoxBackgroundColor = (event) => {
-    const currentBox = event.target
-
+const handleMouseEnter = (event) => {
+    const currentBox = event.target;
     currentBox.classList.toggle('active');
-
-    if (currentBox.classList.contains('active')){
+    if(currentBox.classList.contains('active')){
         currentBox.classList.add('bg-box');
-        console.log ('hola')
-    }else{
-        currentBox.classList.remove('bg-box');
-        console.log('adios')
+    }
+}
+
+const handleMouseLeave = (event) => {
+    const currentBox = event.target
+    if(currentBox.classList.contains('bg-box')){
+        currentBox.classList.remove('bg-box', 'active');
     }
 }
 
 boxes.forEach(box => {
-    box.addEventListener('mouseover',handleBoxBackgroundColor);
+    box.addEventListener('mouseenter',handleMouseEnter);
+    box.addEventListener('mouseleave',handleMouseLeave);
 });
 
 
 
-// Cazar el box container
-// Escuchar cuando el ratón se pone encima. 
-// Cuando se ponga encima clase active que se quita cuando se vaya. 
+
+
+
+
+
+
