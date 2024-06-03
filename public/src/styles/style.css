@@ -51,6 +51,12 @@ a.nav-item:hover {
     color: var(--color-secondary-black);
 }
 
+.container .box-container .box p.most-popular-text {
+        color: var(--color-secondary-green);
+        font-weight: 800;
+        font-size: 0.8rem;
+}
+
 .container .box-container .box .amount {
     font-weight: bolder;
     color: var(--color-primary-pink);
