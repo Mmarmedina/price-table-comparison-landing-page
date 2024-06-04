@@ -2,7 +2,7 @@ let priceToggle = document.querySelector('.price-toggler');
 let price = document.querySelectorAll('.price');
 let duration = document.querySelectorAll('.duration');
 let boxes = document.querySelectorAll('.box');
-
+let box = document.querySelector('.default-plan');
 let discount = 1.25;
 
 priceToggle.onclick = () =>{
@@ -28,7 +28,9 @@ const handleMouseEnter = (event) => {
     currentBox.classList.toggle('active');
     if(currentBox.classList.contains('active')){
         currentBox.classList.add('bg-box');
-    }
+        box.classList.remove('default-plan');
+        
+    }  
 }
 
 const handleMouseLeave = (event) => {
@@ -42,12 +44,3 @@ boxes.forEach(box => {
     box.addEventListener('mouseenter',handleMouseEnter);
     box.addEventListener('mouseleave',handleMouseLeave);
 });
-
-
-
-
-
-
-
-
-

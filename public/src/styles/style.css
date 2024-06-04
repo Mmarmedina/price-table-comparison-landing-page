@@ -28,6 +28,7 @@ a.nav-item:hover {
     margin: 0 0.7rem;
 }
 
+
 .container .box-container .box {
     background-color: var(--color-secondary-white);
     padding: 1rem;
@@ -37,6 +38,10 @@ a.nav-item:hover {
     flex: 1 1 18.75rem;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
     cursor: pointer;
+}
+
+.container .box-container .box.default-plan {
+    background-color: var(--color-secondary-pink-ligther);
 }
 
 .container .box-container .box img {
@@ -155,11 +160,3 @@ footer .footer {
     padding-bottom: 2rem;
     padding: 1.5rem 4.5rem;
 }
-
-
-
-
-
-
-
-
