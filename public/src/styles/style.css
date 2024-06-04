@@ -163,7 +163,7 @@ footer .footer {
     padding: 1.5rem 4.5rem;
 }
 
-@media (max-width: 1024px){
+@media (max-width: 1400px){
     .container .box-container article.box:hover {
         transform: perspective(1000px) translateZ(10px);
     }
