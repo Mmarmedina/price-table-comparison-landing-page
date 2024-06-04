@@ -43,6 +43,10 @@ a.nav-item:hover {
     cursor: pointer;
 }
 
+.container .box-container .box.default-plan {
+    background-color: var(--color-secondary-pink-ligther);
+}
+
 .container .box-container .box img {
     height: 5rem;
     margin: 0.625rem auto;
