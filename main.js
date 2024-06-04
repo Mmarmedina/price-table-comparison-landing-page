@@ -30,17 +30,7 @@ const handleMouseEnter = (event) => {
         currentBox.classList.add('bg-box');
         box.classList.remove('default-plan');
         
-    }
-    
-
-    
-
-    // const currentBox = event.target;
-    // currentBox.classList.toggle('active');
-    // if(currentBox.classList.contains('active')){
-    //     currentBox.classList.add('bg-box');
-    // }
-  
+    }  
 }
 
 const handleMouseLeave = (event) => {
@@ -54,12 +44,3 @@ boxes.forEach(box => {
     box.addEventListener('mouseenter',handleMouseEnter);
     box.addEventListener('mouseleave',handleMouseLeave);
 });
-
-// Si hay una con bg-box y se mete con el mouse 
-
-// BigInt.box[1] tiene bg y bg 0 0 2 entran en active bg box, se le queita bg
-
-
-
-
-
