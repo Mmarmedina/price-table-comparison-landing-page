@@ -2,7 +2,7 @@ let priceToggle = document.querySelector('.price-toggler');
 let price = document.querySelectorAll('.price');
 let duration = document.querySelectorAll('.duration');
 let boxes = document.querySelectorAll('.box');
-
+let box = document.querySelector('.default-plan');
 let discount = 1.25;
 
 priceToggle.onclick = () =>{
@@ -28,7 +28,19 @@ const handleMouseEnter = (event) => {
     currentBox.classList.toggle('active');
     if(currentBox.classList.contains('active')){
         currentBox.classList.add('bg-box');
+        box.classList.remove('default-plan');
+        
     }
+    
+
+    
+
+    // const currentBox = event.target;
+    // currentBox.classList.toggle('active');
+    // if(currentBox.classList.contains('active')){
+    //     currentBox.classList.add('bg-box');
+    // }
+  
 }
 
 const handleMouseLeave = (event) => {
@@ -43,9 +55,9 @@ boxes.forEach(box => {
     box.addEventListener('mouseleave',handleMouseLeave);
 });
 
+// Si hay una con bg-box y se mete con el mouse 
 
-
-
+// BigInt.box[1] tiene bg y bg 0 0 2 entran en active bg box, se le queita bg
 
 
 
