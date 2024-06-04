@@ -32,7 +32,6 @@ a.nav-item:hover {
     margin: 0 0.7rem;
 }
 
-
 .container .box-container .box {
     background-color: var(--color-secondary-white);
     padding: 1rem;
@@ -42,10 +41,6 @@ a.nav-item:hover {
     flex: 1 1 18.75rem;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
     cursor: pointer;
-}
-
-.container .box-container .box.default-plan {
-    background-color: var(--color-secondary-pink-ligther);
 }
 
 .container .box-container .box img {
@@ -58,12 +53,6 @@ a.nav-item:hover {
     font-size: 1.7rem;
     font-weight: bolder;
     color: var(--color-secondary-black);
-}
-
-.container .box-container .box p.most-popular-text {
-        color: var(--color-secondary-green);
-        font-weight: 800;
-        font-size: 0.8rem;
 }
 
 .container .box-container .box .amount {
@@ -106,8 +95,7 @@ a.nav-item:hover {
 }
 
 .container .box-container .btn:hover {
-    background-color: var(--color-secondary-black);
-    transform: scale(1.05);
+    transform: scale(1.08);
 }
 
 .container .price-toggler-container {
@@ -163,4 +151,10 @@ footer .footer {
     color: var(--color-secondary-white);
     padding-bottom: 2rem;
     padding: 1.5rem 4.5rem;
+}
+
+@media (max-width: 768px){
+    .container .box-container article.box:hover {
+        transform: perspective(1000px) translateZ(10px);
+    }
 }
